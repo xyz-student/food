@@ -1,0 +1,234 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Poppins', sans-serif;
+
+}
+p{
+    color: rgb(124, 124, 124);
+    
+}
+h4 {
+    font-family: 'Pacifico', cursive;
+    color: #fea116;
+
+}
+
+.top_nav {
+    font-size: 13px;
+}
+
+.bg {
+    /* background-image: url("../image/cloud_bg.png"); */
+    background-image: linear-gradient(rgba(22, 36, 70, 0.924), rgba(24, 38, 74, 0.9)), url("../image/bg-hero.jpg");
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.bg_content {
+    top: 15%;
+}
+
+.hero_pizza {
+    animation: pizza 20s infinite linear;
+}
+
+@keyframes pizza {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.icon1::before,
+.icon2::before,
+.icon3::before,
+.icon4::before,
+.icon5::before,
+.icon7::before,
+.icon_rev::before,
+.icon6::before {
+    content: "" !important;
+}
+
+.icon1::after {
+    content: "\f508";
+    color: #fea116;
+}
+
+.icon2::after {
+    content: "\f2e7";
+    color: #fea116;
+}
+
+.icon3::after {
+    content: "\f217";
+    color: #fea116;
+}
+
+.icon4::after {
+    content: "\f590";
+    color: #fea116;
+}
+
+.icon5::after {
+    content: "\f0f4";
+    color: #fea116;
+}
+
+.icon6::after {
+    content: "\f805";
+    color: #fea116;
+}
+
+.icon7::after {
+    content: "\f2e7";
+    color: #fea116;
+}
+.icon_rev::after {
+    content: "\f10d";
+    color: #fea116;
+}
+
+.margin {
+    margin-top: 10rem;
+}
+
+.my_card:hover>.icon1::after,
+.my_card:hover>.icon2::after,
+.my_card:hover>.icon3::after,
+.my_card:hover>.icon4::after {
+    color: white;
+    transition: 0.4s;
+
+}
+
+.my_card {
+    background-color: transparent;
+    transition: background-color 0.3s;
+
+}
+
+.my_card:hover  {
+    background-color: #fea116;
+    color: white;
+    transition: 0.4s;
+}
+
+.my_card:hover p  {
+     
+    color: white;
+    transition: 0.4s;
+}
+
+.icon_img {
+    height: 250px;
+
+}
+
+/* food_menu */
+.food_menu::before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid #fea116;
+    display: inline-block;
+    width: 45px;
+    transform: translate(-55px, 13px);
+
+}
+
+.food_menu::after {
+    content: "";
+    position: absolute;
+    border-top: 2px solid #fea116;
+    display: inline-block;
+    width: 45px;
+    transform: translate(8px, 13px);
+
+}
+
+.tab-pane span {
+    color: #fea116;
+}
+
+.nav-tabs .nav-link.active {
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #fea116 !important;
+}
+
+.fixed_bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.365), rgba(0, 0, 0, 0.341), rgba(0, 0, 0, 0.357)), url("/assets/image/fixedbg.jpg");
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.scroll_content {
+
+    outline: 5px solid rgb(255, 255, 255);
+}
+
+.add_cart a {
+    color: #fea116;
+}
+
+.card_box {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.card_box>img {
+    transition: transform 0.3s;
+    transform: scale(1);
+}
+.a{
+    background-color: red;
+}
+.cards:hover img {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.cards:hover .over {
+    z-index: -10;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+
+.over {
+    position: absolute;
+    top: 0%;
+    height: 0px;
+    width: 100%;
+    background-color: #ffc222;
+    transition: height 0.5s, opacity 0.5s;
+    z-index: -10;
+    opacity: 0.1;
+
+}
+
+.rev {
+    font-size: 13px;
+    color: #fea116;
+}
+.about_card img{
+    width: 50px !important;
+}
+ 
+ 
