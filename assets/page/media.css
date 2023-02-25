@@ -1,0 +1,13 @@
+
+/* sm */
+@media screen and (max-width:991px) {
+    .bg{
+        height: 120vh ;
+    }
+   .sm_margin{
+    margin-top: 10rem;
+   }
+    .tab-pane img{
+        width: 20%;
+    }
+}
