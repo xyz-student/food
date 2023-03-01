@@ -19,7 +19,9 @@ h4 {
 .top_nav {
     font-size: 13px;
 }
-
+.navbar{
+    background-color: #103960 !important;
+}
 .bg {
     /* background-image: url("../image/cloud_bg.png"); */
     background-image: linear-gradient(rgba(22, 36, 70, 0.924), rgba(24, 38, 74, 0.9)), url("../image/bg-hero.jpg");
@@ -99,7 +101,7 @@ h4 {
 }
 
 .margin {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .my_card:hover>.icon1::after,
@@ -168,8 +170,8 @@ h4 {
 }
 
 .fixed_bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.365), rgba(0, 0, 0, 0.341), rgba(0, 0, 0, 0.357)), url("/assets/image/fixedbg.jpg");
-    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.506), rgba(0, 0, 0, 0.593), rgba(0, 0, 0, 0.585)), url("/assets/image/fixedbg.jpg");
+    height: 65vh;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -230,5 +232,28 @@ h4 {
 .about_card img{
     width: 50px !important;
 }
+footer a{
+    display: block;
+    color: #01b3a7;
+    margin: 0px 0px 0px 5px;
+ 
+    text-decoration: none;}
+ 
+ footer h6{
+    color: white;
+ }
+    footer{
+        padding: 50px 0px 50px 0px;
+        background-color: #103960;
+        
+    }
+    .bor{
+      border-bottom: 1px solid rgb(183, 255, 245);
+      display: block;  
+      width: 20%;
+    }
+    footer a:hover{
+        color: #a1f1ec;
+    }
  
  
