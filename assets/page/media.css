@@ -10,4 +10,8 @@
     .tab-pane img{
         width: 20%;
     }
+    .fixed_bg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.506), rgba(0, 0, 0, 0.593), rgba(0, 0, 0, 0.585)), url("/assets/image/fixedbg.jpg") !important;
+ 
+    }
 }

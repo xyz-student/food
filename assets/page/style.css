@@ -4,7 +4,12 @@
     /* font-family: 'Nunito Sans', sans-serif; */
     /* font-family: 'Pacifico', cursive; */
     font-family: 'Poppins', sans-serif;
+    /* letter-spacing:1px; */
 
+}
+.bg_main{
+    width: 100%;
+    overflow: hidden;
 }
 p{
     color: rgb(124, 124, 124);
@@ -25,7 +30,7 @@ h4 {
 .bg {
     /* background-image: url("../image/cloud_bg.png"); */
     background-image: linear-gradient(rgba(22, 36, 70, 0.924), rgba(24, 38, 74, 0.9)), url("../image/bg-hero.jpg");
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     background-size: cover;
     background-position: bottom;
@@ -35,6 +40,10 @@ h4 {
 .bg_content {
     top: 15%;
 }
+.bg_content  p{
+    font-size: 16px;
+    letter-spacing: 1px;
+  font-weight: 500;}
 
 .hero_pizza {
     animation: pizza 20s infinite linear;
@@ -256,4 +265,6 @@ footer a{
         color: #a1f1ec;
     }
  
- 
+ .text-info{
+   display: none;
+ }

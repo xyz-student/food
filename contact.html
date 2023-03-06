@@ -81,49 +81,23 @@
     </section>
 
 
-    <!-- map -->
-    <!-- <div class=" ">
+    <div class="con_bg">
         <div class="container">
-            <div class="row align-items-center" style="height: 60vh;">
-                <div class="col-6 border border-3 p-3">
-                    <form action="" class="  p-3" style="">
-
-                        <div class="row">
-                            <div class="col-12">
-                                <h4 class="text-center">about us</h4>
-                                <h3 class="fs-1 fw-bold mb-3 text-white text-center">Welcome to Restoran</h3>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <input type="text" class="mb-3   p-2 w-100" placeholder="your name">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <input type="email" class="mb-3   p-2 w-100" placeholder="your email">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <input type="date" class="mb-3   p-2 w-100" placeholder="date & time">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <select name="" size=" " class="w-100 form-select p-2" id="">
-                                    <option value="null" selected>No Of People</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <textarea name="" id="" rows="5" class="w-100">Special Request</textarea>
-                            </div>
-                            <div class="col-12 col-md-6">
-
-                                <input type="submit" class="btn btn-outline-warning">
-                            </div>
-
-                        </div>
+            <div class="row">
+                <div class="col-5">
+                    <h3>about com</h3>
+                    <h4>welcome back</h4>
+                    <p>sign up with your email address and password</p>
+                    <form action="" class="needs-validation" novalidate>
+                        <input type="text" placeholder="name" required>
+                        <input type="password" maxlength="5" placeholder="password" required>
+                    <a href="" class=" text-decoration-none"> remember me</a> <a href="" class="float-end text-decoration-none">forget password?</a>
                     </form>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+
 
     <!-- footer -->
 
@@ -132,14 +106,14 @@
             <div class="row text-capitalize">
                 <div class="col-12 col-md-12 col-lg-3 mb-5">
                     <h6>company</h6>
-                    
+
                     <a href="">about us</a>
                     <a href="">our services </a>
                     <a href="">our policy</a>
                 </div>
                 <div class="col-12 col-md-12 col-lg-3 mb-5">
                     <h6>get help</h6>
-                     
+
                     <a href="">FAQ</a>
                     <a href="">shipping </a>
                     <a href="">return</a>
@@ -148,7 +122,7 @@
                 </div>
                 <div class="col-12 col-md-12 col-lg-3 mb-5">
                     <h6>online shop</h6>
-                     
+
                     <a href="">watch</a>
                     <a href="">bag </a>
                     <a href="">shoes</a>
@@ -156,7 +130,7 @@
                 </div>
                 <div class="col-12 col-md-12 col-lg-3  ">
                     <h6>follow us</h6>
-                    
+
                     <a href="">about us</a>
                     <a href="">our services </a>
                     <a href="">our policy</a>
@@ -166,12 +140,34 @@
         </div>
     </footer>
     <div class=" py-2" style="background:#11263a">
-        <p class=" text-secondary   text-center mt-3 ">© 2022 reet . All Rights Reserved. Design by <span class="text-danger">&#10084</span> <i>Ritika</i></p>
+        <p class=" text-secondary   text-center mt-3 ">© 2022 reet . All Rights Reserved. Design by <span
+                class="text-danger">&#10084</span> <i>Ritika</i></p>
     </div>
 
 
 
 
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 
 
     <!-- bootstrap -->
