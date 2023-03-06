@@ -29,7 +29,7 @@ h4 {
 }
 .bg {
     /* background-image: url("../image/cloud_bg.png"); */
-    background-image: linear-gradient(rgba(22, 36, 70, 0.924), rgba(24, 38, 74, 0.9)), url("image/bg-hero.jpg");
+    background-image: linear-gradient(rgba(22, 36, 70, 0.924), rgba(24, 38, 74, 0.9)), url("../image/bg-hero.jpg");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -179,7 +179,7 @@ h4 {
 }
 
 .fixed_bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.506), rgba(0, 0, 0, 0.593), rgba(0, 0, 0, 0.585)), url("image/fixedbg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.506), rgba(0, 0, 0, 0.593), rgba(0, 0, 0, 0.585)), url("../image/fixedbg.jpg");
     height: 65vh;
     width: 100%;
     background-size: cover;
