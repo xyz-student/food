@@ -180,7 +180,7 @@ h4 {
 
 .fixed_bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.506), rgba(0, 0, 0, 0.593), rgba(0, 0, 0, 0.585)), url("../image/fixedbg.jpg");
-    height: 65vh;
+    height: 80vh;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -267,4 +267,59 @@ footer a{
  
  .text-info{
    display: none;
+ }
+
+ /* form */
+ .form{
+    background: #103960;
+ }
+
+ .form .input , .form textarea ,.form select {
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid rgb(211, 220, 255);
+    background-color: transparent;
+    color: white !important;
+    
+ }
+ .form .input:focus , .form textarea:focus ,.form select:focus {
+    outline: none !important;
+    box-shadow: none;
+    border-bottom: 1px solid rgb(212, 145, 57);
+    background-color: transparent;
+    color: #ffffff;
+
+
+
+ }
+ select option {
+    margin: 40px;
+    background: #18456f;
+    
+    
+  }
+  
+ .form label{
+    color: #ffffff;
+ }
+ /* .form select::placeholder {
+    color: #ffffff !important;
+ } */
+ .submit{
+    width: 100%;
+padding: 10px;
+border: 1px solid #FEA116;
+background-color: #FEA116;
+color: white;
+transition: background-color 0.3s;
+
+ }
+ .submit:hover{
+    background-color: #c78d36;
+
+
+ }
+ .sub a{
+    font-size: 15px;
  }
