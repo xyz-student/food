@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- STYLE -->
+    <script src="assets/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/page/style.css">
 
     <!-- bootstrap  -->
@@ -22,10 +23,16 @@
     <link rel="icon" href="./assets/image/logo_r.jfif">
     <!-- media -->
     <link rel="stylesheet" href="assets/page/media.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+  <!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  
+ 
     <!-- navbar start here -->
     <section>
         <nav class="navbar navbar-expand-lg  navbar-dark  p-3">
@@ -47,7 +54,8 @@
                         <li class="nav-item"><a href="contact.html"
                                 class="nav-link text-white fw-bold text-capitalize">contact</a>
                         </li>
-                        <li class="nav-item"><a href="product.html" class="nav-link text-warning fw-bold text-capitalize">order
+                        <li class="nav-item"><a href="product.html"
+                                class="nav-link text-warning fw-bold text-capitalize">order
                                 now</a>
                         </li>
                     </ul>
@@ -107,14 +115,14 @@
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                         </div>
                         <div class="offcanvas-body">
-                    <span class="d-block border-top my-3 "></span>
+                            <span class="d-block border-top my-3 "></span>
 
                             <img src="./assets/image/25-1-450x450.png" class="float-start" height="auto" width="30%"
                                 alt="">
                             <div class="con">
                                 <p class="p-0 m-0">Ice Tea</p>
                                 <p class="p-0 m-0">$9X<span class="show">1</span></p>
-                                
+
                             </div>
 
 
@@ -143,7 +151,7 @@
         <div class="container">
             <div class="row text-capitalize">
                 <div class="col-12 col-md-12 col-lg-3 mb-5">
-                    <h6 >company</h6>
+                    <h6>company</h6>
 
                     <a href="" class="fst-italic">about us</a>
                     <a href="" class="fst-italic">our services </a>
@@ -161,10 +169,10 @@
                 <div class="col-12 col-md-12 col-lg-3 mb-5">
                     <h6>online shop</h6>
 
-                    <a href="" class="fst-italic">  watch</a>
-                    <a href="" class="fst-italic">  bag </a>
-                    <a href="" class="fst-italic">  shoes</a>
-                    <a href="" class="fst-italic">  dress</a>
+                    <a href="" class="fst-italic"> watch</a>
+                    <a href="" class="fst-italic"> bag </a>
+                    <a href="" class="fst-italic"> shoes</a>
+                    <a href="" class="fst-italic"> dress</a>
                 </div>
                 <div class="col-12 col-md-12 col-lg-3  ">
                     <h6>Follow us</h6>
@@ -183,6 +191,20 @@
     </div>
 
 
+    <!-- <script>
+        $(window).load(function() {
+	$(".loader").delay(2000).fadeOut("slow");
+  $("#overlayer").delay(2000).fadeOut("slow");
+})
+    </script> -->
+    <script>
+  
+$(window).on('load', function() { // makes sure the whole site is loaded 
+  $('#status').fadeOut(); // will first fade out the loading animation 
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+  $('body').delay(350).css({'overflow':'visible'});
+})
+    </script>
     <script>
         // add to cart
         var add = document.querySelector(".add")
